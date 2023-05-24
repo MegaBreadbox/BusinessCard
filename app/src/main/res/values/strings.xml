@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Business Card</string>
+    <string name="megabreadbox">Megabreadbox</string>
+    <string name="developer">Developer</string>
+    <string name="phone_number">(111) - 111 - 1111</string>
+    <string name="social_media">\@Megabreadbox</string>
+    <string name="breadbox_email">breadbox@proton.net</string>
+    <string name="description_phone_icon">Phone icon</string>
+    <string name="description_social_media">Share Icon</string>
+    <string name="description_email">Email</string>
+    <string name="description_android_icon">Android icon</string>
 </resources>

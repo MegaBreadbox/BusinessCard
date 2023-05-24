@@ -1,7 +1,5 @@
 package com.example.businesscard
 
-import android.graphics.Color.parseColor
-import android.net.wifi.hotspot2.pps.Credential
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -13,15 +11,12 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Share
-import androidx.compose.material.icons.materialIcon
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -31,6 +26,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -81,18 +77,18 @@ fun Card(modifier: Modifier = Modifier) {
                         ){//The actual UI
                     Image(
                         painter = painterResource(R.drawable.android_logo),
-                        contentDescription = "Android icon",
+                        contentDescription = stringResource(R.string.description_android_icon),
                         Modifier
                             .background(Color(65, 52, 148))
                             .size(200.dp)
                     )
                     Text(
-                        text = "Megabreadbox",
+                        text = stringResource(R.string.megabreadbox),
                         fontSize = 24.sp,
                         //color = Color(65, 52, 148) not a great color
                     )
                     Text(
-                        text = "Developer",
+                        text = stringResource(R.string.developer),
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color(28, 50, 71)
@@ -111,13 +107,13 @@ fun Card(modifier: Modifier = Modifier) {
                     ){
                         Icon(
                             Icons.Filled.Call,
-                            contentDescription = "Phone icon",
+                            contentDescription = stringResource(R.string.description_phone_icon),
                             modifier.padding(end = 8.dp)
 
 
                         )
                         Text(
-                            text = "(111) - 111 - 1111",
+                            text = stringResource(R.string.phone_number),
                             fontSize = 16.sp
                         )
                     }
@@ -129,13 +125,13 @@ fun Card(modifier: Modifier = Modifier) {
                     ){
                         Icon(
                             Icons.Filled.Share,
-                            contentDescription = "Share Icon",
+                            contentDescription = stringResource(R.string.description_social_media),
                             modifier.padding(end = 8.dp)
 
 
                             )
                         Text(
-                            text = "@Megabreadbox",
+                            text = stringResource(R.string.social_media),
                             fontSize = 16.sp
                         )
                     }
@@ -147,13 +143,13 @@ fun Card(modifier: Modifier = Modifier) {
                     ){
                         Icon(
                             Icons.Filled.Email,
-                            contentDescription = "Email",
+                            contentDescription = stringResource(R.string.description_email),
                             modifier.padding(end = 8.dp)
 
 
                         )
                         Text(
-                            text = "breadbox@proton.net",
+                            text = stringResource(R.string.breadbox_email),
                             fontSize = 16.sp
                         )
                     }
